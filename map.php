@@ -12,12 +12,17 @@
             div.leaflet-top:nth-child(1) {
                 display: none;
             }
+            body {
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
         </style>
-        <div ng-cloak ng-app="ods-widgets">
-            <ods-dataset-context context="sanisettesparis" sanisettesparis-domain="opendata.paris.fr" sanisettesparis-dataset="sanisettesparis" sanisettesparis-parameters="<?= $_GET["parameters"] ?>">
-                <ods-map no-refit="true" scroll-wheel-zoom="false" basemap="jawg.dark" location="<?= $_GET["location"] ?>">
-                    <ods-map-layer-group>
-                        <ods-map-layer context="sanisettesparis" color="#FFDD67" picto="ods-toilets" show-marker="true" display="auto" shape-opacity="0.5" point-opacity="1" border-color="#FFFFFF" border-opacity="1" border-size="1" border-pattern="solid" size="4" size-min="3" size-max="5" size-function="linear"></ods-map-layer>
+        <div style="height: 100vh;" ng-cloak ng-app="ods-widgets">
+            <ods-dataset-context style="height: 100vh;" context="sanisettesparis" sanisettesparis-domain="opendata.paris.fr" sanisettesparis-dataset="sanisettesparis" sanisettesparis-parameters="<?= $_GET["parameters"] ?>">
+                <ods-map style="height: 100vh;" no-refit="true" scroll-wheel-zoom="true" basemap="jawg.dark" location="<?= $_GET["location"] ?>">
+                    <ods-map-layer-group style="height: 100vh;">
+                        <ods-map-layer style="height: 100vh;" context="sanisettesparis" color="#FFDD67" picto="ods-toilets" show-marker="true" display="auto" shape-opacity="0.5" point-opacity="1" border-color="#FFFFFF" border-opacity="1" border-size="1" border-pattern="solid" size="4" size-min="3" size-max="5" size-function="linear"></ods-map-layer>
                     </ods-map-layer-group>
                 </ods-map>
             </ods-dataset-context>
