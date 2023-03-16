@@ -6,6 +6,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Importation de la bibliothèque ODS pour utiliser le widget -->
     <!--<script src="https://static.opendatasoft.com/libs/ods-map/2.6.0/ods-map.min.js"></script> -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <script>
@@ -84,7 +91,7 @@
                   <!--TYPE-->
                    
                     <li class="list-unstyled border-0 p-2">
-                      <h5 class="text-light">Type</h5>
+                      <h5>Type</h5>
                       <div class="form-check" onclick="mapEvent()">
                         <input class="form-check-input api-button" type="checkbox" value="Lavatory" id="Lavatory">
                         <label class="form-check-label text-light" for="Lavatory">
@@ -124,7 +131,7 @@
                     </li>
                     <!--ARRONDISSEMENT-->
                     <li class="list-unstyled border-0 p-2">
-                      <h5 class="text-light">Arrondissement</h5> 
+                      <h5>Arrondissement</h5> 
                       <div class="form-check" onclick="mapEvent()">
                         <input class="form-check-input api-button-rad" type="checkbox" value="75001" id="75001">
                         <label class="form-check-label text-light" for="75001">
@@ -248,7 +255,7 @@
                     </li>
                     <!--Horaire-->
                     <li class="list-unstyled border-0 p-2">
-                      <h5 class="text-light">Horaire</h5> 
+                      <h5>Horaire</h5> 
                       <div class="form-check" onclick="mapEvent()">
                         <input class="form-check-input api-button-time" type="checkbox" value="10h à 22h" id="10h à 22h">
                         <label class="form-check-label text-light" for="10h à 22h">
@@ -294,7 +301,7 @@
                     </li>
                     <!--ACCES PMR-->
                     <li class="list-unstyled border-0 p-2">
-                      <h5 class="text-light">Acces PMR</h5>
+                      <h5>Acces PMR</h5>
                       <div class="form-check" onclick="mapEvent()">
                         <input class="form-check-input api-radio" type="radio" name="flexRadioDefault" id="flexRadioDefaultoui">
                         <label class="form-check-label text-light" for="flexRadioDefaultoui">
@@ -310,7 +317,7 @@
                     </li>
                     <!-- RELAIS BEBE -->
                     <li class="list-unstyled border-0 p-2">
-                      <h5 class="text-light">Relais BEBE</h5>
+                      <h5>Relais BEBE</h5>
                       <div class="form-check" onclick="mapEvent()">
                         <input class="form-check-input api-radio" type="radio" name="flexRadioDefault2" id="flexRadioDefault2">
                         <label class="form-check-label text-light" for="flexRadioDefault2">
@@ -325,6 +332,14 @@
                       </div>
                     </li>
                 </ul>
+            </div>
+            <div class="col-3 d-none d-sm-block p-0 p-3" style="background-color: #ffcd38;">
+              <footer style="display:flex;">
+                <div><a href="https://www.linkedin.com/in/pierre-dumas-18559521b/">Pierre Alexandre Dumas</a></div>
+                <div><a href="https://www.linkedin.com/in/anthony-bruneaux-6404791bb/">Anthony Bruneaux</a></div>
+                <div><a href="https://www.linkedin.com/in/rapha%C3%ABl-lemaire-303487220/">Raphael Lemaire</a></div>
+                <div><a href="https://www.linkedin.com/in/valentin-charbonneau/">Valentin Charbonneau</a></div>
+              </footer>
             </div>
         </div>
     </div>
