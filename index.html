@@ -50,6 +50,25 @@
           param += "]";
         }
 
+        dep = []
+        Array.prototype.forEach.call(document.getElementsByClassName("api-button-time"), function(element) {
+          if (element.checked) {
+            dep.push(element.value);
+          }
+        });
+        if (dep.length > 0) {
+          first = true;
+            dep.forEach((element) => {
+              if (first) {
+              first = false;
+              param += ",'refine.horaire':['" + element + "'";
+            } else {
+              param += ",'" + element + "'";
+            }
+          });
+          param += "]";
+        }
+
         param += "}";
 
         document.getElementById("map").src = "map.php?parameters=" + param + "&location=15," + latitude + "," + longitude
@@ -231,43 +250,43 @@
                     <li class="list-unstyled border-0 p-2">
                       <h5 class="text-light">Horaire</h5> 
                       <div class="form-check" onclick="mapEvent()">
-                        <input class="form-check-input api-button" type="checkbox" value="10h à 22h" id="10h à 22h">
+                        <input class="form-check-input api-button-time" type="checkbox" value="10h à 22h" id="10h à 22h">
                         <label class="form-check-label text-light" for="10h à 22h">
                           10h à 22h
                         </label>
                       </div>
                       <div class="form-check" onclick="mapEvent()">
-                        <input class="form-check-input api-button" type="checkbox" value="19h - 7h" id="19h - 7h">
+                        <input class="form-check-input api-button-time" type="checkbox" value="19h - 7h" id="19h - 7h">
                         <label class="form-check-label text-light" for="19h - 7h">
                           19h - 7h
                         </label>
                       </div>
                       <div class="form-check" onclick="mapEvent()">
-                        <input class="form-check-input api-button" type="checkbox" value="24 h / 24" id="24 h / 24">
+                        <input class="form-check-input api-button-time" type="checkbox" value="24 h / 24" id="24 h / 24">
                         <label class="form-check-label text-light" for="24 h / 24">
                           24 h /24
                         </label>
                       </div>
                       <div class="form-check" onclick="mapEvent()">
-                        <input class="form-check-input api-button" type="checkbox" value="24h/24" id="24h/24">
+                        <input class="form-check-input api-button-time" type="checkbox" value="24h/24" id="24h/24">
                         <label class="form-check-label text-light" for="24h/24">
                           24h24
                         </label>
                       </div>
                       <div class="form-check" onclick="mapEvent()">
-                        <input class="form-check-input api-button" type="checkbox" value="6 h - 1 h" id="6 h - 1 h">
+                        <input class="form-check-input api-button-time" type="checkbox" value="6 h - 1 h" id="6 h - 1 h">
                         <label class="form-check-label text-light" for="6 h - 1 h">
                           6 h - 1 h
                         </label>
                       </div>
                       <div class="form-check" onclick="mapEvent()">
-                        <input class="form-check-input api-button" type="checkbox" value="6 h - 22 h" id="6 h - 22 h">
+                        <input class="form-check-input api-button-time" type="checkbox" value="6 h - 22 h" id="6 h - 22 h">
                         <label class="form-check-label text-light" for="6 h - 22 h">
                           6 h - 22 h
                         </label>
                       </div> 
                       <div class="form-check" onclick="mapEvent()">
-                        <input class="form-check-input api-button" type="checkbox" value="Voir fiche équipement" id="Voir fiche équipement">
+                        <input class="form-check-input api-button-time" type="checkbox" value="Voir fiche équipement" id="Voir fiche équipement">
                         <label class="form-check-label text-light" for="Voir fiche équipement">
                           Voir fiche équipement
                         </label>
