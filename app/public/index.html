@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Carte des sanisettes à Paris</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Importation de la bibliothèque ODS pour utiliser le widget -->
@@ -12,40 +12,240 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3 d-none d-sm-block p-0 bg-secondary p-3 min-vh-100">
-                <h4 class="gray-3">Right bar</h4>
+            <div class="col-3 d-none d-sm-block p-0 bg-dark p-3 min-vh-100">
+                <h5 style="color: #f3f3f3;">Titanic</h5>
                 <ul class="list-group mt-4">
-                    <li class="list-unstyled border-0 p-2"> <a href="" class="text-light">Product 1 </a></li>
-                    <li class="list-unstyled border-0 p-2"> <a href="" class="text-light">Product 2 </a></li>
-                    <li class="list-unstyled border-0 p-2"> <a href="" class="text-light">Product 3 </a></li>
-                    <li class="list-unstyled border-0 p-2"> <a href="" class="text-light">Product 4 </a></li>
-                    <li class="list-unstyled border-0 p-2"> <a href="" class="text-light">Product 5 </a></li>
-                    <li class="list-unstyled border-0 p-2"> <a href="" class="text-light">Product 6 </a></li>
-                    <li class="list-unstyled border-0 p-2"> <a href="" class="text-light">Product 7 </a></li>
+                  <!--TYPE-->
+                    <li class="list-unstyled border-0 p-2">
+                      <h5 class="text-light">Type</h5> 
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="Lavatory" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          Lavatory
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="Sanisettes" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          Sanisettes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="Toilettes" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          Toilettes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="Urinoir" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          Urinoir
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="Urinoir femme" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          Urinoir femme
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="Wc publics permanents" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          Wc publics Permanents
+                        </label>
+                      </div>         
+                    </li>
+                    <!--ARRONDISSEMENT-->
+                    <li class="list-unstyled border-0 p-2">
+                      <h5 class="text-light">Arrondissement</h5> 
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75001" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75001
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75002" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75002
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75003" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75003
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75004" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75004
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75005" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75005
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75006" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75006
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75007" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75007
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75008" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75008
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75009" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75009
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75010" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75010
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75011" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75011
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75012" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75012
+                        </label>
+                      </div> 
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75013" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75013
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75014" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75014
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75015" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75015
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75016" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75016
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75017" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75017
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75018" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75018
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75019" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75019
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="75020" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          75020
+                        </label>
+                      </div>                  
+                    </li>
+                    <!--Horaire-->
+                    <li class="list-unstyled border-0 p-2">
+                      <h5 class="text-light">Horaire</h5> 
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="10h à 22h" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          10h à 22h
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="19h - 7h" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          19h - 7h
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="24 h / 24" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          24 h /24
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="24h/24" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          24h24
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="6 h - 1 h" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          6 h - 1 h
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="6 h - 22 h" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          6 h - 22 h
+                        </label>
+                      </div> 
+                      <div class="form-check">
+                        <input class="form-check-input api-button" type="checkbox" value="Voir fiche équipement" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          Voir fiche équipement
+                        </label>
+                      </div>         
+                    </li>
+                    <!--ACCES PMR-->
+                    <li class="list-unstyled border-0 p-2">
+                      <h5 class="text-light">Acces PMR</h5>
+                      <div class="form-check">
+                        <input class="form-check-input api-radio" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label text-light" for="flexRadioDefault1">
+                          Oui
+                        </label>
+                      </div>
+                    </li>
+                    <!-- RELAIS BEBE -->
+                    <li class="list-unstyled border-0 p-2">
+                      <h5 class="text-light">Relais BEBE</h5>
+                      <div class="form-check">
+                        <input class="form-check-input api-radio" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label text-light" for="flexRadioDefault1">
+                          Oui
+                        </label>
+                      </div>
+                    </li>
                 </ul>
-            </div>
-            <div class="col-12 col-sm-9 p-0">
-                <nav class="navbar navbar-expand-sm">
-                    <a class="navbar-brand" href="#">ADMIN PANEL</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="list-group bg-primary d-block d-sm-none">
-                            <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 1 </a></li>
-                            <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 2 </a></li>
-                            <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 3 </a></li>
-                            <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 4 </a></li>
-                            <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 5 </a></li>
-                            <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 6 </a></li>
-                            <li class="list-unstyled border-0 p-2"> <a href="" class="text-dark"><i class="fa fa-chevron-right"> </i>   Product 7 </a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <main class="p-4">
-                    My Content
-                </main>
-
             </div>
         </div>
     </div>
