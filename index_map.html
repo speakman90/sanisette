@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titanic</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <style>
+            #map {
+                position: absolute;
+                top: 0;
+                left: 34%;
+                width: 66%;
+                height: 100%;
+                margin: 0;
+            }
+        </style>
+
+        <iframe id="map" src="map.php?parameters={'disjunctive.type':true,'disjunctive.statut':true,'disjunctive.arrondissement':true,'disjunctive.horaire':true,'disjunctive.acces_pmr':true,'disjunctive.relais_bebe':true}&location=15,48.85987,2.34518" frameborder="0"></iframe>
+
+        <script>
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) { 
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    document.getElementById("map").src = "map.php?parameters={'disjunctive.type':true,'disjunctive.statut':true,'disjunctive.arrondissement':true,'disjunctive.horaire':true,'disjunctive.acces_pmr':true,'disjunctive.relais_bebe':true}&location=15," + latitude + "," + longitude
+                });
+            }
+        </script>
+    </body>
+</html>
