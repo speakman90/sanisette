@@ -69,6 +69,18 @@
           param += "]";
         }
 
+        if (document.getElementById("PMROui").checked) {
+          param += ",'refine.acces_pmr':'Oui'";
+        } else {
+          param += ",'refine.acces_pmr':'None'";
+        }
+
+        if (document.getElementById("bebeOui").checked) {
+          param += ",'refine.relais_bebe':'Oui'";
+        } else {
+          param += ",'refine.relais_bebe':'Non'";
+        }
+
         param += "}";
 
         document.getElementById("map").src = "map.php?parameters=" + param + "&location=15," + latitude + "," + longitude
@@ -296,13 +308,13 @@
                     <li class="list-unstyled border-0 p-2">
                       <h5 class="text-light">Acces PMR</h5>
                       <div class="form-check" onclick="mapEvent()">
-                        <input class="form-check-input api-radio" type="radio" name="flexRadioDefault" id="flexRadioDefaultoui">
+                        <input id="PMROui" class="form-check-input api-radio" type="radio" value="Oui" name="flexRadioDefault" id="flexRadioDefaultoui">
                         <label class="form-check-label text-light" for="flexRadioDefaultoui">
                           Oui
                         </label>
                       </div>
                       <div class="form-check" onclick="mapEvent()">
-                        <input class="form-check-input api-radio" type="radio" name="flexRadioDefault" id="flexRadioDefaultnon">
+                        <input class="form-check-input api-radio" type="radio" value="Non" name="flexRadioDefault" id="flexRadioDefaultnon">
                         <label class="form-check-label text-light" for="flexRadioDefaultnon">
                           Non
                         </label>
@@ -312,13 +324,13 @@
                     <li class="list-unstyled border-0 p-2">
                       <h5 class="text-light">Relais BEBE</h5>
                       <div class="form-check" onclick="mapEvent()">
-                        <input class="form-check-input api-radio" type="radio" name="flexRadioDefault2" id="flexRadioDefault2">
+                        <input id="bebeOui" class="form-check-input api-radio" type="radio" value="Oui" name="flexRadioDefault2" id="flexRadioDefault2">
                         <label class="form-check-label text-light" for="flexRadioDefault2">
                           Oui
                         </label>
                       </div>
                       <div class="form-check" onclick="mapEvent()">
-                        <input class="form-check-input api-radio" type="radio" name="flexRadioDefault2" id="flexRadioDefault2non">
+                        <input class="form-check-input api-radio" type="radio" value="Non" name="flexRadioDefault2" id="flexRadioDefault2non">
                         <label class="form-check-label text-light" for="flexRadioDefault2non">
                           Non
                         </label>
